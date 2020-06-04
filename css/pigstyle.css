@@ -1,0 +1,264 @@
+/*Theme colors:
+      Blueberry #687A8F
+      Apricot #F7882F
+      Citrus # F7C331
+      Apple core # DCC7AA
+      */
+
+@font-face {
+  font-family:'Alex Brush';
+  src:  url('../fonts/AlexBrush-Regular.ttf');
+}
+
+/* Base Styles -------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2.5%;
+}
+
+header {
+
+}
+
+main {
+
+}
+
+footer {
+
+}
+
+h1 {
+  font-family: 'Alex Brush', "Trebuchet MS", Helvetica, Sans-Serif;
+  font-size: 5em;
+  text-shadow:  3px 3px 2px rgba(104, 122, 143,.8),
+                -4px 4px 2px rgba(0, 0, 0,.8);
+  margin: 0 0 0;
+  color: #F7882F;
+  line-height: .75;
+}
+
+h2 {
+  font-size: 2em;
+  font-family:  "Helvetica Neue", Helvetica, Helvetica, Sans-Serif;
+  text-decoration: underline;
+  color: #687A8F;
+  margin-top: 0;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+
+/* Pseudo-classes ------------------ */
+a:link {
+  color: #687A8F;
+  text-decoration: none;
+  text-shadow:  -1px 1px .5px rgba(0, 0, 0,.8),
+                1px 1px .5px rgba(0, 0, 0,.8),
+                -1px -1px .5px rgba(0, 0, 0,.8),
+                1px -1px .5px rgba(0, 0, 0,.8);
+}
+
+a:visited {
+  color: #f79431;
+
+}
+
+a:hover {
+  color: #8494a6;
+  text-decoration-style: solid;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #F7C331;
+}
+
+.select-arrow:active {
+  background: #687A8F;
+}
+/* Main Styles --------------------- */
+.main-header {
+  padding-top: 170px;
+  height: 600px;
+  background: linear-gradient(rgba(104, 122, 143,.8), transparent 100%),
+              linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255,.3) 10%, transparent 30%),
+              #687A8F url('../img/Bothpigs_Frontview.jpg') no-repeat center;
+  background-size: cover;
+  text-align: center;
+}
+
+.sub-head {
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+  color: #F7C331;
+  border-bottom: 2px solid #F7C331;
+}
+
+.menu {
+  list-style-type: none;
+  font-size: 1.25rem;
+}
+
+.main-menu {
+  padding-top: 0;
+  margin: 300px 0 0 0;
+}
+
+.main-menu-item {
+  display: inline;
+  margin: 0 30px 0;
+}
+
+.gallerydiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-arrow {
+  float: left;
+  height: 100%; /* Adjust this value to move the positioned div up and down */
+  background: rgba(0, 0, 0, 0.8);
+  font-family: Arial,sans-serif;
+  color: #fff;
+  font-size: 5em;
+}
+
+.pig-profile-pic {
+  height: 400px;
+  width: auto;
+  border: 2px solid #687A8F;
+}
+
+.gallery-pic {
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+/* Layout Styles ------------------ */
+
+#picture-holder {
+  margin: 0;
+  padding: 0;
+  float:  left;
+}
+
+.copyright {
+  font-size: .75em;
+  border-top: 1px solid black;
+
+}
+
+.copyright-holder {
+
+  padding-top: 20px;
+}
+
+/* Floated Columns ------------------ */
+
+/* Float Clearfix ------------------ */
+
+
+/* Media Queries -------------------- */
+
+@media (max-width: 950px) {
+
+  .pig-profile-pic {
+    height: 300px;
+    width: auto;
+  }
+
+}
+
+@media (max-width: 750px) {
+
+  .pig-profile-pic {
+    height: 200px;
+    width: auto;
+  }
+
+  .main-header {
+      padding-top: 125px;
+      height: 400px;
+  }
+
+  .main-menu {
+    padding-top: 0;
+    margin: 90px 0 0 0;
+  }
+
+  .copyright {
+    font-size: .5em;
+    border-top: 0;
+  }
+
+}
+
+@media (max-width: 550px) {
+
+  .pig-profile-pic {
+    height: 150px;
+    width: auto;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .sub-head {
+    font-size: 1.25em;
+  }
+
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  .main-menu {
+    font-size: 1.1em;
+    margin: 80px 0 0 0;
+  }
+
+  .main-menu-item {
+    margin: 0 15px 0;
+  }
+
+  .main-header {
+  height: 300px;
+  }
+
+}
+
+@media (max-width: 450px) {
+
+  .pig-profile-pic {
+    height: 125px;
+    width: auto;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .sub-head {
+    font-size: 1.1em;
+  }
+
+}
+
+@media (max-width: 375px) {
+
+   h2 {
+     font-size: 1.1em;
+   }
+
+}

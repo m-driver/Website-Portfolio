@@ -1,0 +1,129 @@
+/* #F7DAD4 Light rose
+#FD4117 Orange-red
+#0C67CF Light blue
+##157BEF Very light blue
+#FBA90A Dark yellow
+#342609  Dark brown */
+
+@font-face {
+  font-family:'Playfair Variable Regular';
+  src:  url('../fonts/PlayfairDisplay-VariableFont_wght.ttf');
+}
+
+/* Base Styles -------------------- */
+* {
+  box-sizing: border-box;
+  font-family: 'Playfair Variable Regular', Garamond, ‘Hoefler Text’, ‘Times New Roman’, Times, serif;
+}
+
+header {
+  height: 60px;
+  background-color:  #342609;
+  color: white;
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+h1 {
+  font-size: 3em;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+}
+
+h2 {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  color: white;
+}
+
+main {
+  padding: 60px;
+}
+
+
+/* Pseudo-classes ------------------ */
+a:link {
+  color: #F7DAD4;
+  text-decoration: none;
+  text-shadow:  -1px 1px .5px rgba(0, 0, 0,.8),
+                1px 1px .5px rgba(0, 0, 0,.8),
+                -1px -1px .5px rgba(0, 0, 0,.8),
+                1px -1px .5px rgba(0, 0, 0,.8);
+}
+
+a:visited {
+  color: #FBA90A;
+
+}
+
+a:hover {
+  color: #0C67CF;
+  text-decoration-style: solid;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #FD4117;
+}
+
+/* Layout Styles ------------------ */
+
+.nav-title {
+
+  color: #5792FF;
+
+}
+
+.main-menu {
+
+  margin: 0;
+  padding: 5px 0;
+  list-style-type: none;
+
+}
+
+.main-menu-item {
+
+  display: inline;
+  margin: 0 30px 0;
+
+}
+
+.intro-heading {
+  text-align: left;
+  border-bottom: 2px solid #0C67CF;
+
+}
+
+.portfolio-container {
+
+  display: flex; /* or inline-flex */
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+}
+
+.flex-item {
+  background: white;
+  padding: 5px;
+  width: 500px;
+  height: 500x;
+  margin-top: 10px;
+  border: 2px solid black;
+  padding: 0;
+}
+
+.item-intro {
+ background: #157BEF;
+ margin: 0;
+ padding-left: 5px;
+}
+
+.item-content {
+  padding: 5px;
+  margin: 0;
+  }
