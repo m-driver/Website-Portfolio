@@ -22,65 +22,66 @@
       </header>
 
       <main>
-        <section class="intro">
-          <h2>So why a page about guinea pigs?</h2>
-          <p>I can hear you asking that question and the truth
-          is that this is a page about guinea pigs because
-          I didn't know what else to make it about. So without
-          further ado, allow me to introduce our two guinea
-          pigs: Cocoa and Marshmallow!</p>
-        </section>
-
-        <section class="pig-info">
-          <h3>Cocoa</h3>
-          <img src="img/Cocoa_Frontview.jpg" alt="" class="pig-profile-pic">
-          <p>This is Cocoa. He is Marshmallow's father
-            and loves to eat the fluffy ends of the hay. He's
-            smaller than his son, but is also much more
-            outgoing and doesn't mind being picked up.</p>
+        <div class="main-wrapper">
+          <section class="intro">
+            <h2>So why a page about guinea pigs?</h2>
+            <p>I can hear you asking that question and the truth
+            is that this is a page about guinea pigs because
+            I didn't know what else to make it about. So without
+            further ado, allow me to introduce our two guinea
+            pigs: Cocoa and Marshmallow!</p>
           </section>
 
           <section class="pig-info">
-            <h3>Marshmallow</h3>
-            <img src="img/Marshmallow_Frontview.jpg" alt="" class="pig-profile-pic">
-            <p>This is Marshmallow. Marshmallow is quite a bit
-            bigger than his father, but he is also much more
-            skittish. He has gotten better about being picked up
-            and petted, but still prefers to find a dark spot to
-            hide in if given the choice.</p>
-          </section>
+            <h3>Cocoa</h3>
+            <img src="img/Cocoa_Frontview.jpg" alt="" class="pig-profile-pic">
+            <p>This is Cocoa. He is Marshmallow's father
+              and loves to eat the fluffy ends of the hay. He's
+              smaller than his son, but is also much more
+              outgoing and doesn't mind being picked up.</p>
+            </section>
 
-          <div class="storydiv">
-            <H3>The Story of Cocoa and Marshmallow</H3>
-            <p>We got Cocoa and Marshmallow for Christmas 2018 as a
-              surprise for our son. Cassandra has grown up with guinea
-              pigs and so knew how to take care of them, but we were
-              both surprised by how much cage standards had changed (
-              for the better) over the years. Cocoa and Marshmallow
-              live in a spacious enclosure with lots of hay, a water
-              botter, and several places to hide. They also get plenty
-              of attention and are well loved.</p>
-          </div>
+            <section class="pig-info">
+              <h3>Marshmallow</h3>
+              <img src="img/Marshmallow_Frontview.jpg" alt="" class="pig-profile-pic">
+              <p>This is Marshmallow. Marshmallow is quite a bit
+              bigger than his father, but he is also much more
+              skittish. He has gotten better about being picked up
+              and petted, but still prefers to find a dark spot to
+              hide in if given the choice.</p>
+            </section>
 
-          <H3 id="pictures">Some pictures of Cocoa and Marshmallow</H3>
-          <div class="gallerydiv">
+            <div class="storydiv">
+              <H3>The Story of Cocoa and Marshmallow</H3>
+              <p>We got Cocoa and Marshmallow for Christmas 2018 as a
+                surprise for our son. Cassandra has grown up with guinea
+                pigs and so knew how to take care of them, but we were
+                both surprised by how much cage standards had changed (
+                for the better) over the years. Cocoa and Marshmallow
+                live in a spacious enclosure with lots of hay, a water
+                botter, and several places to hide. They also get plenty
+                of attention and are well loved.</p>
+            </div>
+
+            <H3 id="pictures">Some pictures of Cocoa and Marshmallow</H3>
+            <div class="gallerydiv">
 
 
-            <div class="select-arrow" style="cursor: pointer;" onclick="changePicture(1)">&lt;</div>
+              <div class="select-arrow" style="cursor: pointer;" onclick="changePicture(1)">&lt;</div>
 
-            <div id="picture-holder"></div>
+              <div id="picture-holder"></div>
 
-            <div class="select-arrow" onclick="changePicture(0)" style="cursor: pointer;">&gt;</div>
+              <div class="select-arrow" onclick="changePicture(0)" style="cursor: pointer;">&gt;</div>
 
-              <div class="photogallery">
-                <!-- Expanded image -->
-                <img id="expandedImg" style="width:100%">
-                <!-- Image text -->
-                <div id="imgtext"></div>
+                <div class="photogallery">
+                  <!-- Expanded image -->
+                  <img id="expandedImg" style="width:100%">
+                  <!-- Image text -->
+                  <div id="imgtext"></div>
+                </div>
               </div>
             </div>
-          </div>
-
+          </div> <!-- End main wrapper -->
       </main>
 
       <footer>
@@ -88,7 +89,8 @@
         <div class="copyright-holder">
           <div class="copyright">This website is &copy; 2020
           M. Driver. It was designed as part of a website
-          portfolio. I hope that you have enjoyed it.</div>
+          portfolio. I hope that you have enjoyed it. <a href="#top">Back to
+          the top.</a></div>
         </div>
 
       </footer>
