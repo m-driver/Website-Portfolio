@@ -11,7 +11,7 @@ function setPicture( picNumber ) {
   let newAlt = pictureAlts[ picNumber ];
   console.log(newAlt);
   // Set the picture-holder div to contain the default picture
-  document.getElementById("picture-holder").innerHTML = `<img src=${currentPicture} alt="${newAlt}" id="current-pig-pic" class="pig-profile-pic gallery-pic">`;
+  document.getElementById("picture-holder").innerHTML = `<img src=${currentPicture} alt="${newAlt}" id="current-pig-pic" class="gallery-pic">`;
 
   //Get the dimensions of the current picture as it willd display
   let pictureIdentification = document.getElementById("current-pig-pic");

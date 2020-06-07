@@ -57,7 +57,7 @@ h3 {
 
 /* Pseudo-classes ------------------ */
 a:link {
-  color: #317897;
+  color: #00008B;
   text-decoration: none;
   /*text-shadow:  -1px 1px .5px rgba(0, 0, 0,1),
                 1px 1px .5px rgba(0, 0, 0,1),
@@ -66,7 +66,7 @@ a:link {
 }
 
 a:visited {
-  color: #f79431;
+  color: #4169E1;
 
 }
 
@@ -85,23 +85,44 @@ a:active {
 }
 /* Main Styles --------------------- */
 .main-header {
-  padding-top: 170px;
+  padding-top: 50px;
   padding-right: 0;
   padding-left: 0;
   height: 600px;
-  background: linear-gradient(rgba(104, 122, 143,.8), transparent 100%),
+  background: linear-gradient(rgba(104, 122, 143,.8), transparent 100%);/*,
               linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255,.3) 10%, transparent 30%),
-              #687A8F url('../img/Bothpigs_Frontview.jpg') no-repeat center;
+              #687A8F url('../img/Bothpigs_Frontview.jpg') no-repeat center;*/
   background-size: cover;
   text-align: center;
+}
+
+.main-pic-holder {
+  width: 400px;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 50%;
+      margin-left: 25%;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 30px;
+      border: 2px solid black;
+  }
+
+.main-pic {
+  height: 450px;
+  width: auto;
+  margin-left: -65%;
 }
 
 .sub-head {
   font-size: 1.5em;
   padding: 0;
   margin: 0;
-  color: #F7C331;
   border-bottom: 2px solid #F7C331;
+  text-shadow:  -1px 1px 2px rgba(104, 122, 143,.8),
+                -2px 2px 2px rgba(0, 0, 0,.8);
+  color: #F7882F;
 }
 
 .menu {
@@ -110,14 +131,33 @@ a:active {
 }
 
 .main-menu {
-  padding-top: 0;
-  margin: 300px 0 0 0;
+  padding: 0;
+  margin: 20px 0 0 0;
   letter-spacing: .033em;
 }
 
+.main-menu a:hover,
+.main-menu a:link {
+  color: #DCC7AA;
+}
+
+.main-menu a:visited{
+  color: #f79431;
+}
+
 .main-menu-item {
-  display: inline;
+  display: inline-block;
   margin: 0 30px 0;
+
+}
+
+.menu-link {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5%;
+  background-color: #687A8F;
+  text-shadow:  -1px 1px 2px rgba(104, 122, 143,.8),
+                -2px 2px 2px rgba(0, 0, 0,.8);
 }
 
 .gallerydiv {
@@ -135,6 +175,7 @@ a:active {
   font-size: 5em;
 }
 
+.gallery-pic,
 .pig-profile-pic {
   height: 400px;
   width: auto;
@@ -173,34 +214,69 @@ a:active {
 /* Floated Columns ------------------ */
 
 /* Float Clearfix ------------------ */
+.clearfix::after {
+   content: " ";
+   display: table;
+   clear: both;
+}
 
 
 /* Media Queries -------------------- */
 
 @media (max-width: 950px) {
 
+  .gallery-pic,
   .pig-profile-pic {
     height: 300px;
     width: auto;
+  }
+
+  .main-header {
+    padding-top: 30px;
+    padding-right: 0;
+    padding-left: 0;
+    height: 400px;
+    background: linear-gradient(rgba(104, 122, 143,.8), transparent 100%);/*,
+                linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255,.3) 10%, transparent 30%),
+                #687A8F url('../img/Bothpigs_Frontview.jpg') no-repeat center;*/
+    background-size: cover;
+    text-align: center;
+  }
+
+  .main-pic-holder {
+    width: 200px;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: 30px auto 30px;
+        border: 2px solid black;
+    }
+
+  .main-pic {
+    height: 225px;
+    width: auto;
+    margin-left: -65%;
   }
 
 }
 
 @media (max-width: 789px) {
 
+  .gallery-pic,
   .pig-profile-pic {
     height: 200px;
     width: auto;
   }
 
   .main-header {
-      padding-top: 125px;
+      padding-top: 30px;
       height: 400px;
   }
 
   .main-menu {
     padding-top: 0;
-    margin: 180px 0 0 0;
+    margin: 40px 0 0 0;
   }
 
   .copyright {
@@ -212,10 +288,21 @@ a:active {
     font-size: 2.5em;
   }
 
+  h2 {
+    font-size: 1.5em;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 630px) {
+  .main-pic-holder {
+    visibility: collapse;
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+  }
 
+  .gallery-pic,
   .pig-profile-pic {
     height: 150px;
     width: auto;
@@ -236,21 +323,31 @@ a:active {
 
   .main-menu {
     font-size: 1.1em;
-    margin: 90px 0 0 0;
+    margin: 40px 0 0 0;
   }
 
   .main-menu-item {
-    margin: 0 15px 0;
+    margin: 0 15px 30px;
+    display: block;
   }
 
   .main-header {
   height: 300px;
   }
 
+  .menu-link {
+    padding: 10px 50px;
+  }
+
+  .copyright {
+    font-size: .75em;
+  }
+
 }
 
 @media (max-width: 450px) {
 
+  .gallery-pic,
   .pig-profile-pic {
     height: 125px;
     width: auto;
@@ -265,8 +362,11 @@ a:active {
   }
 
   .main-menu {
-    margin: 100px 0 0 0;
+    margin: 100px 0 0;
   }
+
+
+
 }
 
 @media (min-width: 1px) {
@@ -286,12 +386,24 @@ a:active {
 
 }
 
-@media (min-width: 789px) {
+@media (min-width: 790px) {
 
   .main-wrapper {
     width: 85%;
 		max-width: 1150px;
 		margin: 0 auto;
+  }
+
+  .pig-info {
+    float: left;
+    width: 50%;
+    padding: 0 15px;
+  }
+
+  .pig-profile-pic {
+    width: 80%;
+    height: auto;
+
   }
 
 }
