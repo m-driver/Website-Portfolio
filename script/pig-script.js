@@ -7,8 +7,8 @@
 
 function setPicture( picNumber ) {
 
-  let currentPicture = pictureArray[ picNumber ];
-  let newAlt = pictureAlts[ picNumber ];
+  let currentPicture = pictureArray[ picNumber ][0];
+  let newAlt = pictureArray[ picNumber ][1];
   console.log(newAlt);
   // Set the picture-holder div to contain the default picture
   document.getElementById("picture-holder").innerHTML = `<img src=${currentPicture} alt="${newAlt}" id="current-pig-pic" class="gallery-pic">`;
@@ -57,19 +57,17 @@ function changePicture ( picDirection ) {
 
 }
 
-//The picture array for the gallery.
-const pictureArray = ["img/Marshmallow_Frontview.jpg",
-  "img/Bothpigs_Frontview.jpg",
-  "img/Cocoa_Frontview.jpg",
-  "img/Cocoa_Sideview.jpg",
-  "img/Marshmallow_Sideview.jpg"];
-
-//An array of alt descriptions aligning with the pictures.
-const pictureAlts = ["A picture of Marshmallow the guinea pig from the front on a rug with blue marks",
-  "Two guinea pigs standing together on a white blanket",
-  "A close up view of a guinea pig's face",
-  "A guinea pig with a large white stripe on beige carpet",
-  "A guinea pig viewed from the side"];
+//Array of arrays containing image locations and alts. 
+const pictureArray = [
+  ["img/Marshmallow_Frontview.jpg","A picture of Marshmallow the guinea pig from \
+  the front on a rug with blue marks"],
+  ["img/Bothpigs_Frontview.jpg", "Two guinea pigs standing together on a white \
+  blanket"],
+  ["img/Cocoa_Frontview.jpg", "A close up view of a guinea pig's face"],
+  ["img/Cocoa_Sideview.jpg", "A guinea pig with a large white stripe on beige \
+  carpet"],
+  ["img/Marshmallow_Sideview.jpg", "A guinea pig viewed from the side"]
+];
 
 //Defaults the picture ID number to zero.
 let picID = 0;

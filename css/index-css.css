@@ -54,11 +54,13 @@ main {
 }
 
 .menu_holder {
-  float: right;
-  padding-top: 8px;
+  display: none;
 }
 
-
+.heading-link {
+  color: white;
+  text-decoration: none;
+}
 /* Pseudo-classes ------------------ */
 a:link {
   color: #157BEF;
@@ -69,14 +71,26 @@ a:visited {
 
 }
 
+.heading-link:visited {
+  color: white;
+}
+
 a:hover {
   color: #157BEF;
   text-decoration-style: solid;
   text-decoration: underline;
 }
 
+.heading-link:hover {
+  color: #FBA90A;
+}
+
 a:active {
   color: #FD4117;
+}
+
+.heading-link:active {
+  text-decoration: underline;
 }
 
 /* Layout Styles ------------------ */
@@ -128,6 +142,7 @@ a:active {
   margin: 10px;
   border: 2px solid black;
   padding: 0;
+
 }
 
 .item-intro {
@@ -147,7 +162,21 @@ a:active {
 
   }
 
+  .sidenav a {
 
+    color: #5792FF;
+  }
+/* Media Queries */
+
+@media (min-width: 1050px) {
+
+  .menu_holder {
+    display:inline-block;
+    float: right;
+    padding-top: 8px;
+  }
+
+}
   /* Float Clearfix ------------------ */
   .clearfix::after {
      content: " ";

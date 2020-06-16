@@ -1,0 +1,200 @@
+@font-face {
+  font-family:'Merriweather';
+  src:  url('../fonts/Merriweather-Regular.ttf');
+}
+
+
+/* Base Styles -------------------- */
+* {
+  box-sizing: border-box;
+font-family: 'Merriweather', Garamond, ‘Hoefler Text’, ‘Times New Roman’, Times, serif;
+}
+
+main {
+  position: relative;
+}
+
+svg {float:left}
+
+/* Pseudo-classes ------------------ */
+a:link {
+  color: #000;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: #000;
+}
+
+/* Class Styles -------------------- */
+#mainhead {
+  height: 110px;
+  background-color:  CadetBlue;
+  border-bottom: 1px solid black;
+  color: #000;
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.text_title {
+
+  display: none;
+
+}
+
+.circle_container {
+
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+
+
+}
+
+.logo {
+  float: left;
+  height: 80px;
+  width: auto;
+  margin: 0;
+  padding: 20px 0 0 20px;
+  cursor: pointer;
+}
+
+.main-menu {
+
+  margin: 0;
+  padding: 0 15px 20px 0;
+  list-style-type: none;
+
+}
+
+.key_link,
+.key-header {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.key_link {
+    text-decoration: none;
+    display: block;
+    padding: 0 5px;
+    background-color: #568e90;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+
+:target  {
+
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+
+.key_link:active {
+  opacity: .5;
+}
+
+.menu_holder {
+  float: right;
+}
+
+.circle-holder {
+
+  position: absolute;
+
+}
+
+.copyright {
+
+  font-size: 10px;
+  border-top: 1px solid black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15px;
+}
+
+
+/* Float Clearfix ------------------ */
+.clearfix::after {
+   content: " ";
+   display: table;
+   clear: both;
+}
+
+
+@media ( min-width: 550px) {
+
+  .key-header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .key_link {
+    display: inline-block;
+    width: 125px;
+    height: 40px;
+    margin-right: 10px;
+    padding-top: 10px;
+    }
+
+}
+
+@media ( min-width: 660px) {
+
+  .key_link,
+  .key-header {
+    font-size: 16px;
+  }
+
+  .key-header {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .main-menu {
+
+    padding-top: 15px;
+
+  }
+
+  #mainhead {
+    height: 80px;
+  }
+
+  .logo {
+    height: 60px;
+    padding: 10px 0 0 5px;
+  }
+
+}
+
+@media ( min-width: 950px) {
+
+  .text_title {
+    display: inline-block;
+    float:left;
+    padding: 15px 0px 10px 40px;
+    font-size: 35px;
+  }
+
+}

@@ -2,7 +2,9 @@
 
   <head>
     <title="M. Driver's Webpage Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/sidenav.css">
     <link rel="stylesheet" href="css/index-css.css">
   </head>
 
@@ -12,12 +14,19 @@
 
       <header class="clearfix">
         <div class="nav-title">
-          <img src="img/md_logo.png" class="logo">
+          <img src="img/md_logo.png" class="logo" onclick="openNav()">
         </div>
+        <div id="mainSidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="circles.html">The Circle Chorus</a>
+          <a href="pigs.html">Guinea pigs</a>
+        </div>
+
         <nav class = "menu_holder">
           <ul class="main-menu menu">
             <li class="main-menu-item"><a href="#about" >About the Pages</a></li>
             <li class="main-menu-item"><a href="pigs.html">Guinea Pigs</a></li>
+            <li class="main-menu-item"><a href="circles.html">Circles</a></li>
           </ul>
         </nav>
       </header>
@@ -30,7 +39,7 @@
           </div>
           <p>I am presently a student at the University of Tennessee - Knoxville
             anticipating to receive a Master of Science in Information Sciences
-            in August of 2008. I began studying information sciences because of
+            in August of 2020. I began studying information sciences because of
             my long-time love of information organizations and a desire to build
             a career helping others.</p>
           <p>While studying for my M.S.I.S. I would come across jobs that would
@@ -61,7 +70,7 @@
           </div>
           <div class="flex-item">
             <div class="item-intro">
-              <h2>Cocoa and Marshmallow</h2>
+              <h2><a href="pigs.html" class="heading-link">Cocoa and Marshmallow</a></h2>
             </div>
             <div class="item-content">
               <p>This sample webpage is about my son's two guinea pig's: Cocoa
@@ -72,12 +81,22 @@
               floats and clearfix for the design rather than Flexbox.</p>
             </div>
           </div>
-          <div class="flex-item">3</div>
-          <div class="flex-item">4</div>
-          <div class="flex-item">5</div>
-          <div class="flex-item">6</div>
+          <div class="flex-item">
+            <div class="item-intro">
+              <h2><a href="circles.html" class="heading-link">The Circle Chorus</a></h2>
+            </div>
+            <div class="item-content">
+              <p>A JavaScript-first web design that dynamically draws randomly
+              colored circles on the page that change color when you mouse over
+              them. So, why is it a chorus? Becuase if you click on the drawCircles
+              they will make a sound in the key currently set at the top of the
+              page. This page also uses a sidenav-style menu and is a responsive,
+              mobile-first design.</p>
+            </div>
+          </div>
 
         </section>
+
 
 
       </main>
@@ -90,6 +109,7 @@
 
     </div> <!-- Close wrapper div.  -->
 
+    <script src="script/index.js"></script>
   </body>
 
 </html>
