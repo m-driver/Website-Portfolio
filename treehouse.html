@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>My Treehouse Courses</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+
+  <body>
+
+    <div class="container"> <!-- Start Bootstrap container -->
+
+      <!-- Start Nav -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">
+          <img src="img/md_logo.png" width="30" height="30" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pigs.html">Guinea Pigs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="circles.html">Circles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="life.html">Life</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- End Nav -->
+
+
+      <!-- Start Jumbotron -->
+      <div class="jumbotron">
+        <h1 class="display-4 ">My coding training</h1>
+        <p class="lead">I have completed numerous courses on a variety of coding-related
+        topics through the website <a href="https://www.teamtreehouse.com" target="_blank">
+        Treehouse</a>, including courses on HTML, CSS, and JavaScript.</p>
+        <hr class="my-4">
+        <p class="text-primary">This page shows the various courses that I have completed through Treehouse, and
+          also demonstrates me working with <a href="https://www.getbootstrap.com" target="_blank">Bootstrap</a>.
+          Bootstrap is a flexible framework for webpage creation to create sleek,
+          modern designs.</p>
+        <p class="text-primary">My challenge in creating this page was to access the JSON file containing
+          my Treehouse badges (which indicate completing certain training on the site),
+          converting it to a Javascript object and then
+          accessing the desired fields in that object to insert them into an HTML string
+          and put the created HTML into the page. My newest badges are on the <a href="#bottom">bottom</a></p>
+      </div>
+      <!-- End Jumbotron -->
+
+      <!-- This is a holder for the JavaScript to pull my achievements from Treehouse and enter them -->
+      <div id="achievement_holder" class="row">
+
+      </div>
+      <!-- End Holder -->
+
+
+      <!-- Start footer -->
+      <div class="row mt-5 border-top border-primary">
+
+          <div class="col" >
+
+            <a href="#top" id="bottom">Go back to the top.</a> Created my free logo at <a href="https://LogoMakr.com" target="_blank">LogoMakr.com</a>.
+
+          </div>
+
+      </div>
+      <!-- End footer -->
+
+    </div> <!-- End Bootstrap container - ->
+
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="script/treehouse-script.js"></script>
+
+  <!-- End Bootstrap Scripts -->
+
+  </body>
