@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Conway's Game of Life</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sidenav.css">
+    <link rel="stylesheet" href="css/life.css">
+  </head>
+
+  <header class="clearfix">
+    <div class="nav-title">
+      <img src="img/md_logo.png" class="logo" onclick="openNav()">
+    </div>
+    <div id="mainSidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="circles.html">The Circle Chorus</a>
+      <a href="pigs.html">Guinea pigs</a>
+    </div>
+
+    <nav class = "menu_holder">
+      <ul class="main-menu menu">
+        <li class="main-menu-item"><a href="index.html" >Home</a></li>
+        <li class="main-menu-item"><a href="pigs.html">Guinea Pigs</a></li>
+        <li class="main-menu-item"><a href="circles.html">Circles</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+    <div class="wrapper">
+      <main>
+        <div class="button_wrapper">
+          <button class="life_button" onclick="lifeStep()">Life Step</button>
+          <button class="life_button" onclick="newGen()">New Generation</button>
+          <span class="gen">Generation Number: <span id="generation_holder"></span></span>
+        </div>
+        <div class="life_wrapper">
+          <div id="life_holder"></div>
+        </div>
+        <div class="about">
+          <h1>Conway's Game of Life</h1>
+          <p>Conway's Game of Life is a simulation of life from mathmetitican
+            John Conway where each cell in a grid is 'living' or 'dead'. Each
+            generation any 'dead' cell with exactly three living neighbors
+            becomes alive, and any 'live' cell without either one or two living
+            neighbors dies. You can read more about it <a href="https://bitstorm.org/gameoflife/" target="_blank">
+              here</a>.</p>
+        </div>
+
+
+      </main>
+
+
+
+
+    </div>
+
+    <footer>
+      <div class="copyright">
+        This page is &copy; 2020, M. Drive. Created my free logo at <a href="https://LogoMakr.com" target="_blank">LogoMakr.com</a>.
+      </div>
+    </footer>
+    <script src="script/index.js"></script>
+    <script src="script/life.js"></script>
+
+  </body>
+
+</html>

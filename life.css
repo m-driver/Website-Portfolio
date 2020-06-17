@@ -1,0 +1,154 @@
+/* #F7DAD4 Light rose
+#FD4117 Orange-red
+#0C67CF Light blue
+##157BEF Very light blue
+#FBA90A Dark yellow
+#342609  Dark brown */
+
+@font-face {
+  font-family:'Playfair Variable Regular';
+  src:  url('../fonts/PlayfairDisplay-VariableFont_wght.ttf');
+}
+
+/* Base Styles -------------------- */
+* {
+  box-sizing: border-box;
+
+}
+
+main {
+  padding-top: 60px;
+
+}
+
+/* Pseudo-classes ------------------ */
+a:link {
+  color: #157BEF;
+}
+
+a:visited {
+  color: #FBA90A;
+
+}
+
+a:hover {
+  color: #157BEF;
+  text-decoration-style: solid;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #FD4117;
+}
+
+/* Layout Styles ------------------ */
+
+#life_holder {
+
+  width: 330px;
+
+}
+
+.main-container {
+  display:flex;
+
+  justify-content: center;
+  background: linear-gradient(white, lightgreen 90%);
+  height:
+
+}
+
+.nav-title {
+
+  color: #5792FF;
+
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 0;
+}
+
+table {
+  width: 330px;
+}
+
+.live,
+.cell {
+
+  margin: 0;
+  padding: 0px;
+  width: 11px;
+  height: 11px;
+}
+
+.live {
+  background: green;
+}
+
+.cell {
+
+  background: white;
+
+}
+
+.main-menu-item {
+
+  display: inline;
+  margin: 0 30px 0;
+  text-decoration: none;
+  text-shadow:  -1px 1px .5px rgba(0, 0, 0,.8),
+                1px 1px .5px rgba(0, 0, 0,.8),
+                -1px -1px .5px rgba(0, 0, 0,.8),
+                1px -1px .5px rgba(0, 0, 0,.8);
+
+}
+
+.intro-heading {
+  text-align: left;
+  border-bottom: 2px solid #0C67CF;
+
+}
+
+.portfolio-container {
+
+  display: flex; /* or inline-flex */
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+}
+
+.flex-item {
+  background: white;
+  padding: 5px;
+  flex: 1 500px;
+  margin: 10px;
+  border: 2px solid black;
+  padding: 0;
+}
+
+.item-intro {
+ background: #157BEF;
+ margin: 0;
+ padding-left: 5px;
+}
+
+.item-content {
+  padding: 5px;
+  margin: 0;
+  }
+
+  .copyright {
+    font-size: .75em;
+    border-top: 1px solid black;
+
+  }
+
+
+  /* Float Clearfix ------------------ */
+  .clearfix::after {
+     content: " ";
+     display: table;
+     clear: both;
+  }
