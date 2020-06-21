@@ -3,9 +3,14 @@ var url = "https://teamtreehouse.com/michaeldriver2.json";
 
 async function retrieveJSON(sourceURL) {
 
-  const retrievedData = await sourceURL.json();
-  return retrievedData;
+  const retrievedURL = await fetch(sourceURL);
+  return retrievedURL;
 
+}
+
+async function convertJSON(originalData) {
+  const newData = originalData.json();
+  return newData;
 }
 
 function generateHTML(arr) {
@@ -30,5 +35,6 @@ function generateHTML(arr) {
 
 
 const jsonObject = retrieveJSON(url)
+  .then convertJSON(retrievedFile)
   .then generateHTML(parsedJSON)
   .catch( ( error ) => console.log('There was an error: ' + error));
