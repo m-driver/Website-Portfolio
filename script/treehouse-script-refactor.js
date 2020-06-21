@@ -9,7 +9,7 @@ async function retrieveJSON(sourceURL) {
 }
 
 async function convertJSON(originalData) {
-  const newData = originalData.json();
+  const newData = await originalData.json();
   return newData;
 }
 
