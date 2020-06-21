@@ -34,7 +34,7 @@ function generateHTML(arr) {
 }
 
 
-const jsonObject = retrieveJSON(url)
-  .then parsedJSON = convertJSON(jsonObject)
-  .then generateHTML(parsedJSON)
+retrieveJSON(url)
+  .then(convertJSON(jsonObject))
+  .then(generateHTML(parsedJSON))
   .catch( ( error ) => console.log('There was an error: ' + error));
