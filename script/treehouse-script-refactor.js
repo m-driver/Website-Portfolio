@@ -1,7 +1,6 @@
 
 var url = "https://teamtreehouse.com/michaeldriver2.json";
 
-
 async function retrieveJSON(sourceURL) {
 
   const retrievedData = await sourceURL.json();
