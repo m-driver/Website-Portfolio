@@ -138,11 +138,11 @@ a:active {
 
 .main-menu a:hover,
 .main-menu a:link {
-  color: #DCC7AA;
+  color: #F7882F;
 }
 
 .main-menu a:visited{
-  color: #f79431;
+   opacity: .6;
 }
 
 .main-menu-item {
